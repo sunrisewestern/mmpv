@@ -1,4 +1,4 @@
-# An AppleScript App to Handle `mmpv://` URLs and Manage Multiple Instances of MPV
+# An AppleScript App to Handle custom URL Protocol and Manage Multiple Instances of MPV
 
 This guide provides instructions on how to create an AppleScript application that handles custom `mmpv://` URLs for opening files in the MPV media player and allows MPV to handle multiple instances. It includes steps to create the script, convert it into an application, modify the application's `Info.plist` to register the custom URL scheme, and set MPV as the default video player for handling multiple instances.
 
