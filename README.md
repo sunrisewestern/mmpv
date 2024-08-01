@@ -1,15 +1,15 @@
-### Creating an AppleScript App to Handle `mmpv://` URLs and Manage Multiple Instances of MPV
+# An AppleScript App to Handle `mmpv://` URLs and Manage Multiple Instances of MPV
 
 This guide provides instructions on how to create an AppleScript application that handles custom `mmpv://` URLs for opening files in the MPV media player and allows MPV to handle multiple instances. It includes steps to create the script, convert it into an application, modify the application's `Info.plist` to register the custom URL scheme, and set MPV as the default video player for handling multiple instances.
 
-#### Requirements
+## Requirements
 
 - macOS operating system
 - AppleScript Editor (Script Editor on newer macOS versions)
 - Access to the terminal for certain operations
 - MPV installed on your system
 
-#### Steps
+## Steps
 
 1. **Create the AppleScript**
 
@@ -80,11 +80,11 @@ This guide provides instructions on how to create an AppleScript application tha
 
    - Replace `/Users/yourusername/path/to/file.mp4` with the actual path to a test video file or http(s) url
 
-#### Setting MPV as the Default Video Player
+## Setting MPV as the Default Video Player
 
 - To make MPV the default player for video files, right-click on any video file in Finder, select **Get Info**, expand **Open with**, select MPV from the list, and click **Change All...** to apply MPV as the default player for all files of that type.
 
-#### Troubleshooting
+## Troubleshooting
 
 - If the URL scheme does not seem to work, ensure that you have correctly modified the `Info.plist` and re-registered the application.
 - Check for any syntax errors in the AppleScript or the `Info.plist` modifications.
