@@ -9,6 +9,78 @@ This guide provides instructions on how to create an AppleScript application tha
 - Access to the terminal for certain operations
 - MPV installed on your system
 
+Here's how you can add a usage section to the README to guide users on how to utilize the AppleScript application effectively:
+To clarify the usage of the `mmpv://` URL scheme for both local media files and online URLs, you can update the README to include instructions for both scenarios. Here's how you can present this information:
+
+
+## Usage
+
+The custom `mmpv://` URL scheme can be used to open both local media files and online media URLs in the MPV player. Here's how to format your URLs:
+
+### Opening Local Media Files
+
+To open a local video file, format your URL like this:
+
+```
+mmpv://{path-to-media-file}
+```
+
+**Example:**
+
+To open a video file located at `/Users/yourusername/Movies/movie.mp4`, you would use:
+
+```
+open mmpv:///Users/yourusername/Movies/movie.mp4
+```
+
+### Opening Online Media URLs
+
+To open a media file from an online source, format your URL like this:
+
+```
+mmpv://{url}
+```
+
+**Example:**
+
+To open a video from an online source, such as a direct video URL:
+
+```
+open mmpv://https://example.com/path/to/video.mp4
+```
+
+### Advanced Usage
+
+You can also pass parameters to control playback options directly through the URL. For example, to set the volume and speed, format the URL like this:
+
+```
+mmpv://{path-or-url}@volume=100_speed=1.6
+```
+
+This will open the media file with the specified volume and playback speed settings.
+
+### Using URLs in Web Pages
+
+To integrate the `mmpv://` URL scheme in web pages for direct media playback through MPV, use the following HTML snippet:
+
+```html
+<a href="mmpv:///path/to/your/video.mp4@volume=100_speed=1.5">Play in MPV</a>
+```
+
+Replace `/path/to/your/video.mp4` or the online URL with the actual path to the media file and adjust the parameters as needed.
+
+### Automating with Scripts
+
+You can automate the opening of media files with specific settings using shell scripts or other scripting languages. Here's an example using a bash script:
+
+```bash
+#!/bin/bash
+open mmpv:///path/to/video.mp4@volume=90_speed=1.2
+```
+
+Make sure to replace `/path/to/video.mp4` or the online URL with the path to your video file and modify the parameters to suit your preferences.
+
+
 ## Steps
 
 1. **Create the AppleScript**
