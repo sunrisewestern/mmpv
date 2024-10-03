@@ -86,22 +86,8 @@ Make sure to replace `/path/to/video.mp4` or the online URL with the path to you
 1. **Create the AppleScript**
 
    - Open the **Script Editor** application found in `/Applications/Utilities/`.
-   - Enter the following script to handle the `mmpv://` URL scheme and allow multiple instances:
-
-     ```applescript
-     on open location this_URL
-         if this_URL starts with "mmpv://" then
-             set file_path to text 8 thru -1 of this_URL
-             set corrected_path to POSIX path of file_path
-             try
-                 do shell script "open -na /Applications/mpv.app --args --no-terminate-when-idle " & quoted form of corrected_path
-             on error errMsg
-                 display dialog "Error opening file: " & errMsg
-             end try
-         end if
-     end open location
-     ```
-
+   - Create a new script and Copy the content of "main.scpt".
+   - ( Or download the main.scpt and open in **Script Editor** )
    - This script listens for URLs starting with `mmpv://`, extracts the file path, and opens it with MPV, allowing for multiple instances by using the `-n` flag with `open` and `--no-terminate-when-idle` with MPV.
 
 2. **Save the Script as an Application**
