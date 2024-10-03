@@ -138,9 +138,9 @@ Make sure to replace `/path/to/video.mp4` or the online URL with the path to you
 
    - Replace `/Users/yourusername/path/to/file.mp4` with the actual path to a test video file or http(s) url
 
-## Setting MPV as the Default Video Player
+## Setting MMPV as the Default Video Player
 
-- To make MPV the default player for video files, right-click on any video file in Finder, select **Get Info**, expand **Open with**, select MPV from the list, and click **Change All...** to apply MPV as the default player for all files of that type.
+- To make MPV the default player for video files, right-click on any video file in Finder, select **Get Info**, expand **Open with**, select MMPV from the list, and click **Change All...** to apply MPV as the default player for all files of that type.
 
 ## Troubleshooting
 
